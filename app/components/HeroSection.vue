@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-screen bg-black relative">
-    <video autoplay muted loop class="absolute w-full h-full object-cover">
+    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
         <source src="/nm-hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>

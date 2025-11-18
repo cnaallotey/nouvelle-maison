@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-screen fixed inset-0 z-[1000] top-0 bg-black/50 backdrop-blur-sm animate-fade-in">
     <div class="w-full h-full">
-    <div class="w-full md:w-1/2 h-full bg-white/20 backdrop-blur-3xl px-4 md:px-10 py-4 animate-slide-in">
+    <div class="w-full md:w-1/2 h-full bg-white/20 !backdrop-blur-3xl px-4 md:px-10 py-4 animate-slide-in">
     <button @click="$emit('closeMenu')" class="text-white font-semibold text-2xl p-4 bg-black/50 animate-scale-in"><span class="sr-only">Menu</span><PhX class="w-5 h-5 text-yellow-500" /></button>
     <ul class="mt-5 md:mt-10">
     <li class="animate-slide-up" @click="$emit('closeMenu')" style="animation-delay: 0.1s;"><a href="/#" class="text-gray-300 text-lg md:text-xl hover:text-amber-400">Home</a></li>
