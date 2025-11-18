@@ -11,6 +11,8 @@
         class="relative overflow-hidden transition-all duration-700 ease-in-out cursor-pointer group"
         :class="hoveredIndex === index ? 'flex-[3]' : 'flex-[0.5]'"
         @mouseenter="hoveredIndex = index"
+        @click="hoveredIndex = index"
+        @touchstart="hoveredIndex = index"
       >
         <!-- Background overlay -->
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
