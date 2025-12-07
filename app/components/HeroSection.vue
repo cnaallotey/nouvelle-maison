@@ -1,9 +1,18 @@
 <template>
     <div class="w-full h-screen bg-black relative">
-    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+    <!-- <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
         <source src="/nm-hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-    </video>
+    </video> -->
+    <div style="position:absolute;" class="w-full h-full object-cover">
+      <iframe 
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6935e66f491e9c48bfcbd850?background=true&autoplay=true&loop=true&disableControls=true"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+          </iframe>
+    </div>
     <div class="flex flex-col justify-center items-center h-full w-full text-center px-4 bg-black/50 relative z-10">
         <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
             {{ displayText }}<span class="animate-pulse text-amber-400">|</span>
