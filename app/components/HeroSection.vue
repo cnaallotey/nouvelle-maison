@@ -4,7 +4,7 @@
         <source src="/nm-hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video> -->
-    <div style="position:absolute;" class="w-full h-full object-cover">
+    <div style="position:absolute;aspect-ratio:16/9;" class="w-full h-full object-cover">
       <iframe 
             loading="lazy" title="Gumlet video player"
             src="https://play.gumlet.io/embed/6935e66f491e9c48bfcbd850?background=true&autoplay=true&loop=true&disableControls=true"
@@ -17,7 +17,7 @@
         <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
             {{ displayText }}<span class="animate-pulse text-amber-400">|</span>
         </h1>
-        <p class="text-lg md:text-2xl text-gray-300 mb-8">Discover amazing content and connect with us.</p>
+        <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl">Welcome to Nouvelle Maison crafted for comfort, style, and effortless luxury.</p>
        <AppButton @click="$router.push('/#services')">See Our Services</AppButton>
         </div>
     </div>
