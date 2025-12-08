@@ -54,19 +54,23 @@ const hoveredIndex = ref(0) // Default first item expanded
 const services = [
   {
     title: "Property Sales",
-    description: "Nouvelle Maison connects homebuyers to their properties of choice in a seamless and professional manner. We offer varied and competitive property listings which are tailored to meet each buyer's taste, lifestyle and budget."
+    description: "Nouvelle Maison connects homebuyers to their properties of choice in a professional manner. We offer competitive property listings which are tailored to meet each buyer's lifestyle and preference."
   },
   {
     title: "Rentals",
-    description: "We offer technology-driven rental solutions that help renters acquire luxury apartments with ease and certainty by matching them to credible property developers and homeowners. Our rental system supports landlords with vacant property advertisements, applicant filtering and occupancy efficient assessment. Also, we manage the commercial side of property acquisition and rental by delivering optimal buy-to-let investment returns for our clients."
+    description: "We offer technology-driven rental solutions that help renters acquire apartments with ease. Our rental system supports landlords with vacant property advertisements, applicant filtering and occupancy efficient assessment. We also manage the commercial aspects of property acquisition and rental, ensuring our clients achieve optimal buy-to-let investment returns."
   },
   {
     title: "Property Advisory",
-    description: "We provide independent strategic advice to aspiring homeowners, property developers, REITs, landlords, and agents in areas of due diligence, property valuation, new space acquisition, compliance and risk management."
+    description: "We provide independent, strategic advice to aspiring homeowners, property developers, REITs, landlords, and agents across due diligence, property valuation, new space acquisition, compliance, and risk management."
   },
   {
     title: "Property Development",
-    description: "Nouvelle Maison builds custom-made luxury apartments in the most distinctive residential and business addresses in Ghana. We create refreshing property designs that offer clients rich living experiences that meet lifestyle goals and aspirations. Clients with existing properties can benefit from renovation and remodelling services."
+    description: "Nouvelle Maison creates distinctive property designs that offer clients memorable living experiences that meet their lifestyle goals. Clients with existing properties can benefit from our remodelling and renovation services to enhance value and functionality."
+  },
+  {
+    title: "Property Management",
+    description: "Nouvelle Maison provides property management solutions for real estate investors and property owners in Ghana. We offer on-site marketing, tenant and business center management, front-of-office reception (courier, post and visitors), short period letting of residential and commercial properties and AirBnB property management for landlords."
   }
 ]
 </script>
