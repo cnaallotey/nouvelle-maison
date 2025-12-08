@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full px-4 md:px-10 py-4 md:py-10 bg-black/50 backdrop-blur-3xl">
+    <div class="w-full px-4 md:px-10 py-4 md:py-10 bg-black/80 backdrop-blur-3xl">
     <div class="w-full flex flex-row-reverse md:flex-row item-center justify-between gap-3 md:gap-10">
     <button class="text-white font-semibold text-2xl p-4 bg-black/50" @click="showMenu = true"><span class="sr-only">Menu</span><PhList class="w-5 h-5 text-yellow-500" /></button>
     <div class="flex items-center gap-3"><img src="/images/logo.jpg" class="w-12 h-12" alt="logo"><span class="text-white font-semibold text-sm uppercase tracking-wider">Nouvelle <br class="md:hidden"> Maison</span></div>

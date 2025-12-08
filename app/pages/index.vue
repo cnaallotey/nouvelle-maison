@@ -1,6 +1,6 @@
 <template>
    <div>
-    <AppNav class="fixed top-0 z-50 h-fit" />
+    <AppNav class="sticky top-0 z-50 h-fit" />
   <HeroSection />
    <AboutUs id="about" />
    <MissionVision id="mission" />

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-screen bg-black relative">
+    <div class="w-full aspect-[16/9] bg-black relative">
     <!-- <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
         <source src="/nm-hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -13,7 +13,7 @@
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
           </iframe>
     </div>
-    <div class="flex flex-col justify-center items-center h-full w-full text-center px-4 bg-black/50 relative z-10">
+    <div class="hidden flex-col justify-center items-center h-full w-full text-center px-4 bg-black/50 relative z-10">
         <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
             {{ displayText }}<span class="animate-pulse text-amber-400">|</span>
         </h1>
@@ -21,7 +21,45 @@
        <AppButton @click="$router.push('/#services')">See Our Services</AppButton>
         </div>
     </div>
+    <div class="w-full h-16 bg-black flex items-center overflow-x-hidden relative">
+        <div class="marquee-content-1 whitespace-nowrap flex items-center absolute top-0 py-4">
+            <span v-for="(text, index) in texts" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+                {{ text }} <span class="text-amber-400 mx-4">*</span>
+            </span>
+             <span v-for="(text, index) in texts" :key="index + 'dup'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+                {{ text }} <span class="text-amber-400 mx-4">*</span>
+            </span>
+        </div>
+        <div class="marquee-content-2 whitespace-nowrap flex items-center absolute top-0 py-4">
+            <span v-for="(text, index) in texts" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+                {{ text }} <span class="text-amber-400 mx-4">*</span>
+            </span>
+             <span v-for="(text, index) in texts" :key="index + 'dup2'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+                {{ text }} <span class="text-amber-400 mx-4">*</span>
+            </span>
+        </div>
+    </div>
 </template>
+
+<style scoped>
+.marquee-content-1 {
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-content-2 {
+  animation: marquee2 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
+</style>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
