@@ -33,7 +33,7 @@
           <!-- Description (only visible when expanded) -->
           <div 
             class="overflow-hidden transition-all duration-700"
-            :class="hoveredIndex === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'"
+            :class="hoveredIndex === index ? 'max-h-[350px] opacity-100' : 'max-h-0 opacity-0'"
           >
             <p class="text-gray-200 text-base max-w-xl leading-relaxed">
               {{ service.description }}
