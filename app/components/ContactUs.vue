@@ -35,6 +35,7 @@
                   <h4 class="text-gray-400 text-sm mb-1">Phone</h4>
                   <p class="text-white">+233 (0) 302523984</p>
                   <p class="text-white">+233 (0) 303983219</p>
+                  <p class="text-white">+233 (0) 257728848</p>
                 </div>
               </div>
 
@@ -59,7 +60,7 @@
           </div>
 
           <!-- Contact Form -->
-          <div class="bg-white/5 backdrop-blur-sm p-8 ">
+          <div class="bg-white/5 hidden backdrop-blur-sm p-8 ">
             <h3 class="text-2xl font-bold text-white mb-6">Send us a Message</h3>
             
             <form @submit.prevent="handleSubmit" class="space-y-4">

@@ -1,10 +1,10 @@
 <template>
-    <div class="w-full aspect-[16/9] bg-black relative">
+    <div class="w-full !h-[calc(100vh-186px)]  aspect-[16/9] bg-black relative overflow-hidden">
     <!-- <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
         <source src="/nm-hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video> -->
-    <div style="position:absolute;aspect-ratio:16/9;" class="w-full h-full object-cover">
+    <div style="position:absolute;aspect-ratio:16/9;" class="w-screen shrink-0 h-screen  object-cover">
       <iframe 
             loading="lazy" title="Gumlet video player"
             src="https://play.gumlet.io/embed/6935e66f491e9c48bfcbd850?background=true&autoplay=true&loop=true&disableControls=true"
@@ -13,28 +13,30 @@
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
           </iframe>
     </div>
-    <div class="hidden flex-col justify-center items-center h-full w-full text-center px-4 bg-black/50 relative z-10">
-        <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
+    <div class="flex flex-col justify-center items-center h-full w-full text-center px-4 relative z-10 p-4 md:p-10">
+        <div class="flex flex-col items-center px-4 md:px-10 py-10 bg-black/20 backdrop-blur-sm">
+          <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
             {{ displayText }}<span class="animate-pulse text-amber-400">|</span>
         </h1>
-        <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl">Welcome to Nouvelle Maison crafted for comfort, style, and effortless luxury.</p>
+        <p class="text-lg hidden md:text-2xl text-gray-300 mb-8 max-w-3xl">Welcome to Nouvelle Maison crafted for comfort, style, and effortless luxury.</p>
        <AppButton @click="$router.push('/#services')">See Our Services</AppButton>
+        </div>
         </div>
     </div>
     <div class="w-full h-16 bg-black flex items-center overflow-x-hidden relative">
         <div class="marquee-content-1 whitespace-nowrap flex items-center absolute top-0 py-4">
-            <span v-for="(text, index) in texts" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+            <span v-for="(text, index) in newText" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
-             <span v-for="(text, index) in texts" :key="index + 'dup'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+             <span v-for="(text, index) in newText" :key="index + 'dup'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
         </div>
         <div class="marquee-content-2 whitespace-nowrap flex items-center absolute top-0 py-4">
-            <span v-for="(text, index) in texts" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+            <span v-for="(text, index) in newText" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
-             <span v-for="(text, index) in texts" :key="index + 'dup2'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+             <span v-for="(text, index) in newText" :key="index + 'dup2'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
         </div>
@@ -65,10 +67,13 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const texts = [
-  "LUXURY LIVING WITHIN REACH",
   "BUY PROPERTIES WITH CERTAINTY",
   "ALL-IN-ONE DIGITAL REALTY SOLUTIONS",
-  "CONNECTING PEOPLE, PROPERTY AND TECHNOLOGY"
+]
+
+const newText = [
+  "Nouvelle Maison",
+  "Crafted for comfort, style, and effortless luxury",
 ]
 
 const displayText = ref('')

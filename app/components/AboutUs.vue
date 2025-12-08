@@ -18,7 +18,7 @@
       <div class="text-5xl md:text-6xl font-bold text-white mb-2">
         {{ animatedDestinations }}
       </div>
-      <div class="text-gray-400 text-sm md:text-base">Destinations</div>
+      <div class="text-gray-400 text-sm md:text-base">Exciting Destinations</div>
     </div>
     
     <!-- Masterpieces -->
@@ -107,8 +107,8 @@ const animateStats = () => {
   const interval = duration / steps
   
   const targetDestinations = 3
-  const targetMasterpieces = 18
-  const targetPortfolio = 10
+  const targetMasterpieces = 11
+  const targetPortfolio = 1.2
   
   let currentStep = 0
   

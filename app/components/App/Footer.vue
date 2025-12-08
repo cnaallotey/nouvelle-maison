@@ -18,7 +18,8 @@
         <AppPretitle class="!justify-start">Call Us</AppPretitle>
         <p class="text-gray-300 text-sm md:text-base mt-2 ml-6">
           +233 (0) 302523984 <br >
-          +233 (0) 303983219
+          +233 (0) 303983219 <br>
+          +233 (0) 257728848
         </p>
       </div>
       <div class="grid">
@@ -67,7 +68,7 @@
       </div>
     </div>
     <div class="w-full text-center text-white text-sm mt-20">
-      &copy; 2024 Nouvelle Maison. All rights reserved.
+      &copy; 2025 Nouvelle Maison Ltd. All rights reserved.
     </div>
   </div>
 </template>

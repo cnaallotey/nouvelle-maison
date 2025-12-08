@@ -1,12 +1,12 @@
 <template>
-    <div class="w-full bg-black p-4 md:p-10">
-    <div class="max-w-screen-2xl mx-auto relative overflow-hidden w-full md:h-[600px]">
-<div class="absolute aspect-ratio:16/9 w-full h-full object-cover">
+    <div class="w-full bg-black overflow-hidden">
+    <div class="w-screen relative overflow-hidden w-full md:h-[600px]">
+<div class="absolute aspect-ratio:16/9 w-screen h-screen object-cover object-center shrink-0">
       <iframe 
             loading="lazy" title="Gumlet video player"
             src="https://play.gumlet.io/embed/691c2017d854cacb98dea160?background=true&autoplay=true&loop=true&disableControls=true"
             style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
-            class="w-full h-full object-cover aspect-ratio:16/4"
+            class="w-screen shrink-0 h-screen object-cover aspect-ratio:16/9"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
           </iframe>
     </div>
