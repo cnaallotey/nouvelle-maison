@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-black p-4 md:p-10 py-20">
+  <div class="w-full bg-black py-10 md:py-32">
     <div class="max-w-screen-2xl mx-auto">
       <div class="text-center mb-12">
         <AppPretitle>Contact Us</AppPretitle>
@@ -127,7 +127,7 @@
         <!-- Google Map -->
         <div class="bg-white/5 backdrop-blur-sm overflow-hidden border-l-4 border-amber-400 h-[800px] lg:h-auto">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7877639358696!2d-0.1870!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMTMuMyJOIDDCsDExJzEzLjIiVw!5e0!3m2!1sen!2sgh!4v1234567890123!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.5933015912024!2d-0.17356384295664648!3d5.634885157066893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b42a6b34419%3A0x7aa2cc4f20e6bc3d!2sLagos%20Ave%2C%20Accra!5e0!3m2!1sen!2sgh!4v1765201297944!5m2!1sen!2sgh"
             width="100%"
             height="100%"
             style="border:0;"
