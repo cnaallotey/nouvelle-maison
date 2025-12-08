@@ -1,10 +1,10 @@
 <template>
     <div class="w-full !h-[calc(100vh-186px)]  aspect-[16/9] bg-black relative overflow-hidden">
-    <!-- <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
-        <source src="/nm-hero-video.mp4" type="video/mp4" />
+    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+        <source src="https://video.gumlet.io/680ac81b0527a5bd8dda23eb/6936c2f53dd43f39be928afa/download.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-    </video> -->
-    <div style="position:absolute;aspect-ratio:16/9;" class="w-screen shrink-0 h-screen  object-cover">
+    </video>
+    <!-- <div style="position:absolute;aspect-ratio:16/9;" class="w-screen shrink-0 h-screen  object-cover">
       <iframe 
             loading="lazy" title="Gumlet video player"
             src="https://play.gumlet.io/embed/6935e66f491e9c48bfcbd850?background=true&autoplay=true&loop=true&disableControls=true"
@@ -12,7 +12,7 @@
           referrerpolicy="origin"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
           </iframe>
-    </div>
+    </div> -->
     <div class="flex flex-col justify-center items-center h-full w-full text-center px-4 relative z-10 p-4 md:p-10">
         <div class="flex flex-col items-center px-4 md:px-10 py-10 bg-black/20 backdrop-blur-sm">
           <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
@@ -72,7 +72,7 @@ const texts = [
 ]
 
 const newText = [
-  "Nouvelle Maison",
+  "NOUVELLE MAISON",
   "Crafted for comfort, style, and effortless luxury",
 ]
 
