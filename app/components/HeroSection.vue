@@ -69,13 +69,13 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const texts = [
-  "BUY PROPERTIES WITH CERTAINTY",
+  "LUXURY LIVING WITHIN REACH",
   "ALL-IN-ONE DIGITAL REALTY SOLUTIONS",
 ]
 
 const newText = [
   "NOUVELLE MAISON",
-//  "Crafted for comfort, style, and effortless luxury",
+  "Crafted for comfort, style, and effortless luxury",
 ]
 
 const displayText = ref('')

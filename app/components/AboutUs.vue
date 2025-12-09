@@ -26,7 +26,7 @@
       <div class="text-5xl md:text-6xl font-bold text-white mb-2">
         {{ animatedMasterpieces }}
       </div>
-      <div class="text-gray-400 text-sm md:text-base">Masterpieces</div>
+      <div class="text-gray-400 text-sm md:text-base">Marketplaces</div>
     </div>
     
     <!-- Portfolio -->

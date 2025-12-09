@@ -27,12 +27,10 @@
         <p class="text-gray-300 text-sm ml-6 md:text-base mt-2">
           <a href="mailto:info@nouvellemaisonlimited.com"
             >info@nouvellemaisonlimited.com
-          </a>
-          (General Enquiries) <br >
+          </a> <br >
           <a href="mailto:sales@nouvellemaisonlimited.com"
             >sales@nouvellemaisonlimited.com</a
           >
-          (Sales Enquiries)
         </p>
       </div>
       <div class="grid">

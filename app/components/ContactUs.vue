@@ -48,12 +48,10 @@
                   <h4 class="text-gray-400 text-sm mb-1">Email</h4>
                   <p class="text-white"><a href="mailto:info@nouvellemaisonlimited.com"
             >info@nouvellemaisonlimited.com
-          </a>
-          (General Enquiries)</p>
+          </a></p>
                   <p class="text-white"> <a href="mailto:sales@nouvellemaisonlimited.com"
             >sales@nouvellemaisonlimited.com</a
-          >
-          (Sales Enquiries)</p>
+          ></p>
                 </div>
               </div>
             </div>
