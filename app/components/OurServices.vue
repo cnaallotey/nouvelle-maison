@@ -1,10 +1,10 @@
 <template>
-    <div class="p-4 md:p-10">
-    <div class="w-full flex flex-col items-center p-4 md:p-10 bg-black md:!py-20">
+    <div class="p-2 md:p-10">
+    <div class="w-full flex flex-col items-center px-4 py-12 md:p-10 bg-black md:!py-20">
     <AppPretitle>Our Services</AppPretitle>
     <AppSecondaryHeader>What We Offer</AppSecondaryHeader>
     
-    <div class="w-full max-w-screen-2xl mt-12 h-[800px] flex flex-col md:flex-row">
+    <div class="w-full max-w-screen-2xl mt-12 h-[800px] flex flex-row md:flex-row">
       <div 
         v-for="(service, index) in services" 
         :key="index"
@@ -25,7 +25,7 @@
           <!-- Title (always visible) -->
           <h3 
             class="text-white font-bold transition-all duration-700 origin-bottom-left"
-            :class="hoveredIndex === index ? 'text-xl md:text-3xl mb-4' : 'text-lg md:text-2xl whitespace-nowrap transform md:-rotate-90 translate-y-0 translate-x-2 md:translate-x-5'"
+            :class="hoveredIndex === index ? 'text-xl md:text-3xl mb-4' : 'text-lg md:text-2xl whitespace-nowrap transform -rotate-90 translate-y-0 translate-x-2 md:translate-x-5'"
           >
             {{ service.title }}
           </h3>
@@ -35,7 +35,7 @@
             class="overflow-hidden transition-all duration-700"
             :class="hoveredIndex === index ? 'max-h-auto opacity-100' : 'max-h-0 opacity-0'"
           >
-            <p class="text-gray-200 text-base max-w-xl leading-relaxed">
+            <p class="text-gray-200 text-sm md:text-base max-w-xl leading-relaxed">
               {{ service.description }}
             </p>
           </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full !h-[calc(100vh-186px)]  aspect-[16/9] bg-black relative overflow-hidden">
+    <div class="w-full !h-[calc(80vh-186px)] md:!h-[calc(100vh-186px)]  aspect-[16/9] bg-black relative overflow-hidden">
     <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
         <source src="https://video.gumlet.io/680ac81b0527a5bd8dda23eb/6936c2f53dd43f39be928afa/download.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -14,8 +14,8 @@
           </iframe>
     </div> -->
     <div class="flex flex-col justify-center items-center h-full w-full text-center px-4 relative z-10 p-4 md:p-10">
-        <div class="flex flex-col items-center px-4 md:px-10 py-10 bg-black/20 backdrop-blur-sm">
-          <h1 class="text-5xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
+        <div class="flex flex-col items-center px-4 md:px-10 py-10">
+          <h1 class="text-3xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
             {{ displayText }}<span class="animate-pulse text-amber-400">|</span>
         </h1>
         <p class="text-lg hidden md:text-2xl text-gray-300 mb-8 max-w-3xl">Welcome to Nouvelle Maison crafted for comfort, style, and effortless luxury.</p>
@@ -25,18 +25,18 @@
     </div>
     <div class="w-full h-16 bg-black flex items-center overflow-x-hidden relative">
         <div class="marquee-content-1 whitespace-nowrap flex items-center absolute top-0 py-4">
-            <span v-for="(text, index) in newText" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+            <span v-for="(text, index) in newText" :key="index" class="text-white text-base md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
-             <span v-for="(text, index) in newText" :key="index + 'dup'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+             <span v-for="(text, index) in newText" :key="index + 'dup'" class="text-white text-base md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
         </div>
         <div class="marquee-content-2 whitespace-nowrap flex items-center absolute top-0 py-4">
-            <span v-for="(text, index) in newText" :key="index" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+            <span v-for="(text, index) in newText" :key="index" class="text-white text-base md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
-             <span v-for="(text, index) in newText" :key="index + 'dup2'" class="text-white text-lg md:text-2xl font-light tracking-widest mx-4">
+             <span v-for="(text, index) in newText" :key="index + 'dup2'" class="text-white text-base md:text-2xl font-light tracking-widest mx-4">
                 {{ text }} <span class="text-amber-400 mx-4">*</span>
             </span>
         </div>
@@ -73,7 +73,7 @@ const texts = [
 
 const newText = [
   "NOUVELLE MAISON",
-  "Crafted for comfort, style, and effortless luxury",
+//  "Crafted for comfort, style, and effortless luxury",
 ]
 
 const displayText = ref('')

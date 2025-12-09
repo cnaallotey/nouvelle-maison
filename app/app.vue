@@ -2,6 +2,7 @@
   <div>
     <NuxtRouteAnnouncer />
     <NuxtPage />
+    <WhatsAppButton />
   </div>
 </template>
 

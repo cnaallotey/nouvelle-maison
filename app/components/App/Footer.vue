@@ -3,8 +3,8 @@
     <div
       class="w-full flex flex-col items-center gap-4 pb-10 border-b-[1px] border-amber-400/20"
     >
-      <img src="/images/logo.jpg" class="size-20" alt="logo" >
-      <p class="text-white font-semibold text-sm md:text-base">NOUVELLE MAISON</p>
+      <img src="/images/logo-white.png" class="h-20 md:h-32" alt="logo" >
+      <p class="text-white font-semibold text-sm md:text-base sr-only">NOUVELLE MAISON</p>
     </div>
     <div class="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-20 mt-10">
       <div class="grid">
