@@ -14,7 +14,7 @@
           </iframe>
     </div> -->
     <div class="flex flex-col justify-center items-center h-full w-full text-center  px-4 relative z-10 p-4 md:p-10">
-        <div class="flex flex-col items-center px-4 md:px-10 py-10 bg-black/40 backdrop-blur-sm">
+        <div class="flex flex-col items-center px-4 md:px-10 py-10">
           <!-- <img src="/images/logo-full.png" class="w-28 md:w-40" alt="logo">
           <p class="text-lg md:text-xl font-normal mb-6 tracking-wider text-amber-500">Nouvelle Maison</p> -->
           <h1 class="text-3xl md:text-7xl max-w-5xl font-medium text-white mb-6  items-center">
