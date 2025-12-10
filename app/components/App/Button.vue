@@ -1,7 +1,7 @@
 <template>
  <button 
     ref="buttonRef"
-    class="relative bg-amber-400/10 text-amber-200  text-sm uppercase hover:text-amber-600 font-medium px-6 py-4 text-lg overflow-visible group transition duration-300"
+    class="relative bg-amber-400/10 text-amber-500  text-sm uppercase hover:text-amber-600 font-bold px-6 py-4 text-lg overflow-visible group transition duration-300"
  >
     <span class="relative z-10 inline-flex flex-row gap-2">
       <slot />
