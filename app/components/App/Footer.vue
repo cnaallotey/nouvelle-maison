@@ -37,7 +37,7 @@
         <AppPretitle class="!justify-start">Explore</AppPretitle>
         <ul class="flex flex-col gap-1 mt-2 ml-6">
           <li>
-            <a href="/" class="text-gray-300 text-sm md:text-base hover:text-amber-400"
+            <a href="/#" class="text-gray-300 text-sm md:text-base hover:text-amber-400"
               >Home</a
             >
           </li>
