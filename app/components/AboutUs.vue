@@ -32,7 +32,7 @@
     <!-- Portfolio -->
     <div class="flex flex-col items-center md:items-start border-l-2 border-amber-400 pl-6">
       <div class="text-5xl md:text-6xl font-bold text-white mb-2">
-        ${{ animatedPortfolio }}bn
+        {{ animatedPortfolio }}
       </div>
       <div class="text-gray-400 text-sm md:text-base">Portfolio</div>
     </div>
