@@ -14,13 +14,13 @@
 	      href="https://wa.me/233257728848"
       target="_blank"
       rel="noopener noreferrer"
-      class="group flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2"
+      class="group flex h-14 px-2 md:px-4  items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2"
       aria-label="Contact us on WhatsApp"
       @mouseenter="isHovered = true"
       @mouseleave="isHovered = false"
     >
       <PhWhatsappLogo :size="32" weight="fill" />
-      <span class="sr-only">Contact us on WhatsApp</span>
+      <span class="pl-2 hidden md:block">Contact us on WhatsApp</span>
     </a>
   </div>
 </template>
