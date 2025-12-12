@@ -112,11 +112,11 @@ const newText = [
 const containerRef = ref<HTMLElement | null>(null)
 
 // Text 1 State
-const text1Scale = ref(50) 
+const text1Scale = ref(150) 
 const text1Opacity = ref(0) // Start invisible until we process scroll, or simpler: start 0.
 
 // Text 2 State
-const text2Scale = ref(50)
+const text2Scale = ref(100)
 const text2Opacity = ref(0)
 
 // SubContent State
@@ -152,7 +152,7 @@ const handleScroll = () => {
   // --- Text 1 Logic ---
   const t1ZoomProgress = mapRange(progress, 0.0, 0.35)
   // Scale 50 -> 1
-  text1Scale.value = 50 - (t1ZoomProgress * 49)
+  text1Scale.value = 150 - (t1ZoomProgress * 149)
   
   // Fade IN logic for Text 1? 
   // It should probably just be visible from start? 
@@ -168,7 +168,7 @@ const handleScroll = () => {
   // --- Text 2 Logic ---
   const t2ZoomProgress = mapRange(progress, 0.45, 0.8)
   // Scale 50 -> 1
-  text2Scale.value = 50 - (t2ZoomProgress * 49)
+  text2Scale.value = 100 - (t2ZoomProgress * 99)
   
   // Opacity for Text 2
   // It should fade in or just pop in and zoom? 
