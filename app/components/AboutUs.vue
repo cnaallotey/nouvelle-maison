@@ -106,9 +106,9 @@ const animateStats = () => {
   const steps = 60
   const interval = duration / steps
   
-  const targetDestinations = 3
-  const targetMasterpieces = 11
-  const targetPortfolio = 1.2
+  const targetDestinations = 0
+  const targetMasterpieces = 0
+  const targetPortfolio = 0
   
   let currentStep = 0
   
