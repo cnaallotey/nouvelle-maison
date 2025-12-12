@@ -41,7 +41,7 @@
                      but actually sticky container captures scroll naturally. 
                      We need pointer input for the button though. -->
                 <div 
-                    class="absolute bottom-20 md:bottom-32 flex flex-col items-center pointer-events-auto"
+                    class="absolute top-1/2 w-full mt-24 md:mt-32 flex flex-col items-center pointer-events-auto"
                     :style="{ opacity: subContentOpacity, transform: `translateY(${subContentTranslate}px)` }"
                 >
                     <p class="text-lg hidden md:text-2xl text-gray-300 mb-8 max-w-3xl">
@@ -51,6 +51,11 @@
                 </div>
             </div>
 
+            <div class="max-w-60 absolute bottom-20 md:left-6 left-4 bg-black/50 backdrop-blur-sm p-2 z-20 flex flex-col items-center gap-2">
+                <img src="https://video.gumlet.io/680ac81b0527a5bd8dda23eb/693809857aaaf18e07b25182/thumbnail-1-0.png?v=1765280353738" class="w-full h-18 md:h-full object-cover" alt="">
+                <AppButton @click="openVideoModal" class="w-full relative">Watch Promo Video</AppButton>
+                <PromoVideo @close="closeVideoModal" v-if="isVideoModalOpen" />
+            </div>
             <!-- Marquee Footer -->
             <div class="absolute bottom-0 w-full h-16 bg-black/50 backdrop-blur-sm flex items-center overflow-x-hidden z-20 pointer-events-auto">
                 <div class="marquee-content-1 whitespace-nowrap flex items-center absolute top-0 py-4">
@@ -181,6 +186,16 @@ const handleScroll = () => {
   const subProgress = mapRange(progress, 0.8, 0.95)
   subContentOpacity.value = subProgress
   subContentTranslate.value = 50 * (1 - subProgress)
+}
+
+const isVideoModalOpen = ref(false)
+
+const openVideoModal = () => {
+    isVideoModalOpen.value = true
+}
+
+const closeVideoModal = () => {
+    isVideoModalOpen.value = false
 }
 
 onMounted(() => {
